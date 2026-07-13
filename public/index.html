@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF AI Agent with RAG</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>PDF AI Document Analyzer & Chat</h1>
+    
+    <div class="upload-card">
+        <input type="file" id="pdf" accept=".pdf">
+        <button id="analyze">Analyze Document</button>
+    </div>
+    
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Processing document and indexing vectors into Chroma...</p>
+    </div>
+
+    <div id="workspace" class="workspace hidden">
+        
+        <div id="result" class="card column animate-fade">
+            <h2 id="title">Document Insights</h2>
+            <h3>Summary</h3>
+            <p id="summary"></p>
+            <h3>Main Points</h3>
+            <ul id="points"></ul>
+            <h3>Action Items</h3>
+            <ul id="actions"></ul>
+        </div>
+
+        <div id="chat-section" class="card column animate-fade">
+            <h2>Ask Your Document</h2>
+            <div id="chat-box" class="chat-box">
+                <div class="message system-message">
+                    Hello! Document uploaded successfully. Ask me specific questions about its content.
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="question" placeholder="e.g., What are the payment terms?">
+                <button id="ask-btn">Ask AI</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
