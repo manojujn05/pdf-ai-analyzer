@@ -1,6 +1,6 @@
-# DocuPulse AI 🚀
+# PDF-AI-Analyzer 🚀
 
-DocuPulse AI is an intelligent document processing application built with Node.js and Express. It leverages **Groq (Llama 3.3)** for high-speed textual synthesis and **Chroma DB** as a vector store to power an interactive Retrieval-Augmented Generation (RAG) chat engine. Users can upload complex PDF documents, view automated insight breakdowns, and chat contextually with their documents without risking model hallucinations.
+pdf-ai-analyzer is an intelligent document processing application built with Node.js and Express. It leverages **Groq (Llama 3.3)** for high-speed textual synthesis and **Chroma DB** as a vector store to power an interactive Retrieval-Augmented Generation (RAG) chat engine. Users can upload complex PDF documents, view automated insight breakdowns, and chat contextually with their documents without risking model hallucinations.
 
 ---
 
